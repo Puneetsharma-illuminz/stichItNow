@@ -34,7 +34,7 @@ console.log(process.env.PORT);
         });
         const swaggerOptions = {
             info: {
-                title: 'Express Documentation',
+                title: 'STN Documentation',
                 version: '1.0.0',
                 contact: {
 
