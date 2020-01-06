@@ -16,10 +16,12 @@ let host;
 let port = 8000;
 
 if (process.env.NODE_ENV == 'live') {
+    host = process.env.HOST;
+    port = process.env.PORT || 3000;
+    console.log(host, "----");
 
-    port = process.env.PORT || 3000
 } else {
-    // host = 'localhost';
+    host = 'localhost';
     port = 3000;
 }
 console.log(process.env.PORT);
